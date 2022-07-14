@@ -3,9 +3,11 @@
     <!-- <b-container class="nav-container" fluid="lg" align-v="start" > -->
       <div class="nav-container">
         <b-row align-h="center">
-              <span class="nav-button" variant="outline-light">About</span>
-              <span class="nav-button" variant="outline-light">Projects</span>
-              <span class="nav-button" variant="outline-light">Contact</span>
+              <span class="nav-button"><router-link to="/">Home</router-link></span>
+              <span class="nav-button"><router-link to="about">About</router-link></span>
+              <span class="nav-button"><router-link to="/contact">Contact</router-link></span>
+              <span class="nav-button"><router-link to="/quote">Quote</router-link></span>
+
         </b-row>
       </div>
     <!-- </b-container> -->
@@ -21,21 +23,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-container {
-  /* background-color: teal; */
   margin: 0 3rem;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 .nav-button {
   margin: auto 1rem auto 2rem;
   cursor: pointer;
@@ -46,6 +36,22 @@ a {
 }
 
 .nav-button:hover {
-    color: #ffffff;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a {
+  color: #acacac;
+  font-family: "Raleway", sans-serif;
+  /* font-weight: 500; */
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a.router-link-exact-active {
+  color: #ffc14e;
 }
 </style>

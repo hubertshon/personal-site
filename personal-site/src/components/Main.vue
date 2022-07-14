@@ -1,22 +1,14 @@
 <template>
-  <!-- <div class="hello">
-    <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-  </div> -->
-
     <b-container class="d-flex align-self-center hi5" fluid="lg" align-v="center">
         <div class="align-self-center">
             <b-row class="justify-content-left">
-                <h1 class="display-3">Hubert Shon</h1>
+                <h1 class="display-2">Hubert Shon</h1>
             </b-row>
             <b-row class="justify-content-center">
-                <p class="text-left">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </p>
+                <h4 class="text-left">
+                    I am a full stack engineer in the New York City area. Nice to meet you! 
+                    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
+                </h4>
             </b-row>
         </div>
     </b-container>
@@ -51,6 +43,9 @@ a {
 h1 {
   font-family: "DM Serif Display", serif;
   letter-spacing: 0.02em;
+  background: -webkit-linear-gradient(65deg, #eee 15%, #ffc14e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 p {
@@ -59,7 +54,6 @@ p {
 }
 
 .hi5 {
-    /* background-color: black; */
     height: 100%;
 }
 </style>
