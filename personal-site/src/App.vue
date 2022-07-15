@@ -3,37 +3,29 @@
     <Nav />
 
     <b-container class="container">
-        <router-view></router-view>
-        <Quote :quoteNumber="1" />
-
+      <transition name="router-anim" enter-active-class="animated fadeIn" leave-active-class="animted fadeOut">
+        <router-view>
+        </router-view>
+      </transition>
     </b-container>
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav.vue'
-import Quote from './components/Quote.vue'
 
 export default {
   name: 'App',
   components: {
-    // Main,
-    Nav,
-    Quote
-  },
-  data: () => ({
-  }),
-  created() {
-  },
-  mounted() {
-    // this.startTab();
-  
-  },
+    Nav
+  }
 }
 </script>
 
 <style lang="scss">
 @import "~@/assets/scss/vendors/bootstrap-vue/index";
+@import "http://cdn.jsdelivr.net/npm/animate.css@3.5.1";
+
 #app {
   font-family: Avenir, Raleway, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -56,16 +48,9 @@ body {
 .container {
   height: 100%;
 }
-  // background-image: radial-gradient(circle, );
 
-// background-image: radial-gradient(circle, );
-// .gradient {
-//   position: absolute; 
-//   top: 0px; 
-//   right: 0px;
-//   height: 800px;
-//   width: 800px;
-//   background: radial-gradient(closest-side at 100px 100px, rgb(150, 150, 150) 0%, rgba(45, 56, 69, 0) 39%);
-//   opacity: 0.3;
-// }
+.animated {
+  animation-duration: 1s;
+}
+
 </style>
