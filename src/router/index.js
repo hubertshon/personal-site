@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import About from '../components/About.vue'
 import Main from '../components/Main.vue'
 import Contact from '../components/Contact.vue'
-import Quote from '../components/Quote.vue'
+// import Life from '../components/Life.vue'
 
 Vue.use(VueRouter)
 
@@ -28,16 +28,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: Contact
-  },
-  {
-    path: '/quote',
-    name: 'Quote',
-    component: Quote
-  },
+  }
 ]
 
 const router = new VueRouter({
-  routes
+  routes,
 })
 
 export default router

@@ -12,11 +12,11 @@ Vue.config.productionTip = false
 
 //icons
 import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faLocationDot, faEnvelope, faFileDownload } from '@fortawesome/free-solid-svg-icons'
-import { faFileLines } from '@fortawesome/free-regular-svg-icons'
+import { faLocationDot, faEnvelope, faFileDownload, faChevronCircleRight, faChevronCircleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faFileLines, faArrowAltCircleRight } from '@fortawesome/free-regular-svg-icons'
 
 
-library.add(faGithubSquare, faLocationDot, faEnvelope, faLinkedin, faEnvelope, faFileLines, faFileDownload)
+library.add(faGithubSquare, faLocationDot, faEnvelope, faLinkedin, faEnvelope, faFileLines, faFileDownload, faArrowAltCircleRight, faChevronCircleLeft, faChevronCircleRight)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 

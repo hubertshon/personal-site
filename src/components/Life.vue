@@ -8,6 +8,15 @@
                 <span>{{ selectQuote.author }} </span><span v-if="selectQuote.source" style="font-style: italic;">, {{ selectQuote.source }}</span>
             </b-row>
         </div>
+
+        <!-- <div class="align-self-center contact">
+            <b-row class="justify-content-left header">
+                <img src="../assets/images/oryukdo.jpg">
+            </b-row>
+            <b-row>
+                <span>{{ selectQuote.author }} </span><span v-if="selectQuote.source" style="font-style: italic;">, {{ selectQuote.source }}</span>
+            </b-row>
+        </div> -->
     </b-container>
 </template>
 
@@ -15,18 +24,14 @@
 import quotes from '../assets/quotes.js';
 
 export default {
-  name: 'Quote',
-  props: {
-        quoteNumber: Number
-    },
+  name: 'Life',
   data: () => ({
+    quoteNumber: 0,
     selectQuote: quotes[this.quoteNumber]
   }),
   created() {
+    this.quoteNumber = Math.random() * quotes.quotes.length | 0;
     this.selectQuote = quotes.quotes[this.quoteNumber];
-    console.log('HELLO quote number', this.quoteNumber);
-    console.log('HI select quote', this.selectQuote);
-    console.log('HOWDY quotes', quotes);
   }
 }
 </script>
@@ -51,7 +56,8 @@ a {
 h1 {
   font-family: "DM Serif Display", serif;
   letter-spacing: 0.02em;
-  background: -webkit-linear-gradient(65deg, #eee 25%, #ffc14e);
+  /* background: -webkit-linear-gradient(65deg, #eee 25%, #ffc14e); */
+  background: -webkit-linear-gradient(65deg, #eee 25%, #FBCB71);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

@@ -1,10 +1,10 @@
 <template>
     <b-container class="d-flex align-self-top hi5" fluid="lg" align-v="start">
         <div class="align-self-center about">
-            <b-row class="justify-content-left">
+            <b-row class="justify-content-left ml-0 mb-2">
                 <h1 class="display-4">About</h1>
             </b-row>
-            <b-row class="justify-content-center">
+            <b-row class="justify-content-center ml-0">
                 <p class="text-left">
                     Full-stack engineer with almost 2 years of experience at a financial tech startup. Strong proclivity towards frontend applications and user experience. Highly motivated self-learner who is resolute in seeing tasks to completion. I take delight in empowering users and collaborating with teams that enable their users to do “more”.
                 </p>
@@ -15,6 +15,7 @@
                         <h4>Skills</h4>
                     </b-col>
                 </b-row>
+
 
                 <table class="table-responsive" style="width: 100%;">
                     <tbody>
@@ -52,10 +53,30 @@
 
             <b-row class="mt-5">
                 <b-col>
-                    <font-awesome-icon class="mr-2" icon="fa-solid fa-file-download" />
-                    <span>PDF Resume</span>
+                        <a href="/public/docs/HubertShon-Resume2022.pdf" download>
+                        <font-awesome-icon class="mr-2" icon="fa-solid fa-file-download" />
+                        <span>Download Resume</span>
+                        </a>
                 </b-col>
             </b-row>
+
+            <!-- <b-row class="mt-5 mb-2">
+                <b-col cols="3">
+                    <h4>Favorites</h4>
+                </b-col>
+            </b-row>
+            <b-row class="mb-2">
+                    <b-col cols="2">
+                        <p>Hobbies</p>
+                        <p>Games</p>
+                        <p>Music</p>
+                    </b-col>
+                    <b-col cols="10">
+                        <p>Guitarist / Gamer / Barista Wanna-Be / Beginner Motorcyclist</p>
+                        <p>Final Fantasy VII Remake, Red Dead Redemption II </p>
+                        <p>The Midnight / </p>
+                    </b-col>
+                </b-row> -->
         </div>
     </b-container>
 </template>
@@ -63,7 +84,16 @@
 <script>
 export default {
   name: 'About',
-  props: {}
+  props: {},
+//   data: () => {
+//     publicPath: process.env.BASE_URL
+//   },
+  methods: {
+    downloadResume() {
+        const url = 'public/docs/HubertShon-Resume2022.pdf';
+        window.location.href = url;
+    }
+  }
 }
 </script>
 
@@ -96,7 +126,7 @@ p {
 }
 
 .hi5 {
-    height: 100%;
+    /* height: 100%; */
 }
 
 .about {
@@ -104,6 +134,6 @@ p {
 }
 
 .experience {
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 </style>
