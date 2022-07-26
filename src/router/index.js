@@ -1,11 +1,13 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// import Home from '../views/Home.vue'
 import About from '../components/About.vue'
 import Main from '../components/Main.vue'
-// import Contact from '../components/Contact.vue'
-import Life from '../components/Life.vue'
+import Contact from '../components/Contact.vue'
 import Projects from '../components/Projects.vue';
+// import Home from '../views/Home.vue'
+// import Life from '../components/Life.vue'
+
+
 
 Vue.use(VueRouter)
 
@@ -25,16 +27,16 @@ const routes = [
 
     // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
-  // {
-  //   path: '/contact',
-  //   name: 'Contact',
-  //   component: Contact
-  // },
   {
-    path: '/life',
-    name: 'Life',
-    component: Life
+    path: '/contact',
+    name: 'Contact',
+    component: Contact
   },
+  // {
+  //   path: '/life',
+  //   name: 'Life',
+  //   component: Life
+  // },
   {
     path: '/projects',
     name: 'Projects',
@@ -43,6 +45,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes,
 })
 

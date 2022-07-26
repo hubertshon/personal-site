@@ -1,5 +1,5 @@
 <template>
-    <b-container class="d-flex align-self-top hi5" fluid="md" align-v="center">
+    <b-container class="d-flex align-self-top justify-content-center" fluid="md" align-v="center">
         <div class="align-self-center contact">
             <b-row class="justify-content-left header ml-0">
                 <h1 class="display-4">Contact</h1>
@@ -26,7 +26,7 @@
                 <b-col cols="0.5">
                     <font-awesome-icon icon="fa-brands fa-github-square" />
                 </b-col>
-                <b-col cols="8"><a href="github.com/hubert-shon">github.com/hubertshon</a></b-col>
+                <b-col cols="8"><a href="http://github.com/hubertshon">github.com/hubertshon</a></b-col>
             </b-row>
             <b-row>
                 <b-col cols="3">
@@ -34,7 +34,7 @@
                 <b-col cols="0.5">
                     <font-awesome-icon icon="fa-brands fa-linkedin" />
                 </b-col>
-                <b-col cols="8"><a href="linkedin.com/in/hubert-shon">linkedin.com/in/hubert-shon</a></b-col>
+                <b-col cols="8"><a href="http://linkedin.com/in/hubert-shon">linkedin.com/in/hubert-shon</a></b-col>
             </b-row>
 
         </div>
@@ -65,7 +65,6 @@ a {
   /* color: #42b983; */
   /* color: #70AE6E; */
   color: #12EAEA;
-
 }
 
 h1 {
@@ -81,13 +80,7 @@ p {
   font-weight: normal;
 }
 
-.hi5 {
-    /* background-color: black; */
-    /* height: 100%; */
-}
-
 .contact {
-    /* background-color: darkgray; */
     width: 65%;
 }
 .header {

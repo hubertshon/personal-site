@@ -8,17 +8,35 @@
             <h5>Latest</h5>
           </b-row>
           <b-row>
-              <b-col><InfoCard text="Casa Bar Menu" link="https://angry-ritchie-9530d3.netlify.app/" /></b-col>
-              <b-col></b-col>
-              <b-col></b-col>
+              <b-col><InfoCard 
+                text="Casa Bar Menu" 
+                link="https://angry-ritchie-9530d3.netlify.app/" 
+                imageUrl="barmneu.png"
+                description="A menu of drinks I like to serve guests at home. Vue.js"
+              /></b-col>
+              <b-col><InfoCard
+                text="MeesterKeem Twitch"
+                link="https://twitch.tv/meesterkeem"
+                imageUrl="twitch.png" 
+                description="Graphics and widgets for a Twitch channel."
+                /></b-col>
           </b-row>
           <b-row class="mt-5 mb-2">
             <h5>Early Projects</h5>
           </b-row>
           <b-row>
-              <b-col><InfoCard text="Regulae" link="https://www.youtube.com/watch?v=XUN3ksZ0bzU" /></b-col>
-              <b-col><InfoCard text="Grade My Professor" link="https://peaceful-lowlands-22766.herokuapp.com/" /></b-col>
-              <b-col><InfoCard text="Game" /></b-col>
+              <b-col><InfoCard
+                text="Regulae"
+                link="https://www.youtube.com/watch?v=XUN3ksZ0bzU"
+                imageUrl="regulae.png" 
+                description="Habit tracker that organizes habits into larger categories. Rails, Vue.js"
+                /></b-col>
+              <b-col><InfoCard 
+                text="Grade My Professor"
+                link="https://peaceful-lowlands-22766.herokuapp.com/"
+                imageUrl="professor.png" 
+                description="A mock educator rating site. Node/Express.js, Vue.js"
+                /></b-col>
           </b-row>
         </div>
 
@@ -89,10 +107,6 @@ p {
     height: 100%;
 }
 
-.contact {
-    /* background-color: darkgray; */
-    width: 75%;
-}
 .header {
     margin-bottom: 1rem;
 }

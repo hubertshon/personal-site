@@ -9,7 +9,7 @@
                     <img src="../assets/images/hs_headshot.jpg" class="headshot" />
                 </b-col>
                 <b-col cols="9" class="d-flex align-content-middle">
-                <p class="text-left align-self-middle">
+                <p class="text-left align-self-middle summary">
                     Full-stack engineer with almost 2 years of experience at a financial tech startup. Strong proclivity towards frontend applications and user experience. Highly motivated self-learner who is resolute in seeing tasks to completion. I take delight in empowering users and collaborating with teams that enable their users to do “more”.
                 </p>
                 </b-col>
@@ -82,25 +82,6 @@
                     </b-col>
                 </b-row>
             </div>
-            
-
-            <!-- <b-row class="mt-5 mb-2">
-                <b-col cols="3">
-                    <h4>Favorites</h4>
-                </b-col>
-            </b-row>
-            <b-row class="mb-2">
-                    <b-col cols="2">
-                        <p>Hobbies</p>
-                        <p>Games</p>
-                        <p>Music</p>
-                    </b-col>
-                    <b-col cols="10">
-                        <p>Guitarist / Gamer / Barista Wanna-Be / Beginner Motorcyclist</p>
-                        <p>Final Fantasy VII Remake, Red Dead Redemption II </p>
-                        <p>The Midnight / </p>
-                    </b-col>
-                </b-row> -->
         </div>
     </b-container>
 </template>
@@ -177,5 +158,9 @@ td {
 
 .table-cell-right {
     text-align: right;
+}
+
+.summary {
+    font-size: 1.25em;
 }
 </style>

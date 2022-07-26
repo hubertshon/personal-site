@@ -3,13 +3,6 @@
     <Nav />
     <div class="d-flex justify-content-between align-items-center" style="height: 100%;">
 
-      <div id="leftArrow" class="direction-button" @click="flipPage($event)">
-        <font-awesome-icon 
-          id="leftArrow" 
-          icon="fa-solid fa-chevron-circle-left" 
-          class="directions ml-5" 
-        />
-      </div>
     <b-container class="container">
       <transition 
         name="router-anim" 
@@ -21,58 +14,18 @@
       </transition>
     </b-container>
 
-      <div id="rightArrow" class="direction-button" @click="flipPage($event)">
-        <font-awesome-icon 
-          icon="fa-solid fa-chevron-circle-right"
-          class="directions mr-5" 
-        />
-      </div>
-
     </div>
   </div>
 </template>
 
 <script>
-import Nav from './components/Nav.vue'
-import router from './router/index.js'
-
-
+import Nav from './components/Nav.vue';
 
 export default {
   name: 'App',
   components: {
     Nav
   },
-  data:() => ({
-    currentPage: '',
-    pageRoutes: ['/', '/about', '/projects', '/life']
-    
-  }),
-  mounted() {
-    this.currentPage = this.$router.currentRoute.path;
-  },
-  methods: {
-    flipPage(event) {
-      const clickDirection = event.target.id;
-      const currentIndex = this.pageRoutes.findIndex((element) => {
-        return element === this.currentPage;
-      });
-
-      let indexToNavigate;
-      if (clickDirection === 'rightArrow') {
-        indexToNavigate = currentIndex + 1;
-      } else {
-        indexToNavigate = currentIndex - 1;
-      }
-
-      if (indexToNavigate + 1 > this.pageRoutes.length) {
-        indexToNavigate = 0;
-      }
-
-      router.push(this.pageRoutes[indexToNavigate]);
-      this.currentPage = this.$router.currentRoute.path;
-    }
-  }
 }
 </script>
 
@@ -102,7 +55,6 @@ body {
 }
 
 .container {
-  // height: 90%;
   width: 100%;
 }
 
@@ -112,25 +64,6 @@ body {
 
 .animated-out {
   opacity: 0;
-}
-
-
-.direction-button {
-  opacity: 0.05;
-  height: 65px;
-  cursor: pointer;
-}
-
-.direction-button:hover {
-  opacity: 1;
-  transition: opacity 0.6s ease-out;
-}
-
-.directions {
-  font-size: 2em;
-  color: #FCCA6C;
-  // color: #FBCB71;
-  pointer-events: none;
 }
 
 </style>

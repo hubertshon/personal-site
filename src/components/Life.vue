@@ -4,30 +4,31 @@
           <b-row class="justify-content-left header">
               <h1 class="display-5">{{ selectQuote.text }}</h1>
           </b-row>
-          <b-row>
+          <b-row class="mb-5">
               <span>{{ selectQuote.author }} </span><span v-if="selectQuote.source" style="font-style: italic;">, {{ selectQuote.source }}</span>
           </b-row>
+          <!-- <b-row></b-row> -->
             
 
-        <div class="align-self-center contact">
-          <h3 class="mb-4">Favorites</h3>
-          <b-row class="mb-5">
-              <b-col cols="2">Games:</b-col>
-              <b-col>FFVII: Remake</b-col>
-              <b-col>Red Dead Redemption 2</b-col>
-              <b-col>Hades</b-col>
-          </b-row>
-          <b-row class="mb-5">
-              <b-col cols="2">Watches:</b-col>
+        <div class="align-self-center favorites">
+          <h4 class="mb-2">Recent Favorites</h4>
+          <b-row class="mb-5 flex-column">
+              <b-col class="subheader" cols="2">Watches:</b-col>
               <b-col>Stranger Things 4</b-col>
               <b-col>Moon Knight</b-col>
               <b-col>Unforgiven</b-col>
           </b-row>
-          <b-row>
-            <b-col cols="2">Reads:</b-col>
+          <b-row class="mb-5 flex-column">
+            <b-col class="subheader" cols="2">Reads:</b-col>
             <b-col>The Way of the Heart, Henri Nouwen</b-col>
             <b-col>Lincoln's Battle with God, Stephen Mansfield</b-col>
             <b-col>The Name of the Wind, Patrick Rothfuss</b-col>
+          </b-row>
+          <b-row class="mb-5 flex-column">
+              <b-col class="subheader" cols="2">Games:</b-col>
+              <b-col>FFVII: Remake</b-col>
+              <b-col>Red Dead Redemption 2</b-col>
+              <b-col>Hades</b-col>
           </b-row>
         </div>
         </div>
@@ -103,8 +104,18 @@ p {
     /* background-color: darkgray; */
     width: 75%;
 }
+
+.favorites { 
+  margin-top: 5rem;
+}
 .header {
     margin-bottom: 1rem;
+}
+
+.subheader { 
+  font-family: "DM Serif Display", serif;
+  font-size: 1.25em;
+
 }
 .row-heading {
     font-weight: bold;
