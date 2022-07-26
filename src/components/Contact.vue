@@ -1,5 +1,5 @@
 <template>
-    <b-container class="d-flex align-self-top hi5" fluid="lg" align-v="center">
+    <b-container class="d-flex align-self-top hi5" fluid="md" align-v="center">
         <div class="align-self-center contact">
             <b-row class="justify-content-left header ml-0">
                 <h1 class="display-4">Contact</h1>
@@ -88,7 +88,7 @@ p {
 
 .contact {
     /* background-color: darkgray; */
-    width: 100%;
+    width: 65%;
 }
 .header {
     margin-bottom: 3rem;

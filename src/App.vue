@@ -45,7 +45,7 @@ export default {
   },
   data:() => ({
     currentPage: '',
-    pageRoutes: ['/', '/about', '/contact']
+    pageRoutes: ['/', '/about', '/projects', '/life']
     
   }),
   mounted() {

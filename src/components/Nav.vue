@@ -3,7 +3,9 @@
         <b-row align-h="center">
               <span class="nav-button"><router-link to="/">Home</router-link></span>
               <span class="nav-button"><router-link to="/about">About</router-link></span>
-              <span class="nav-button"><router-link to="/contact">Contact</router-link></span>
+              <span class="nav-button"><router-link to="/projects">Projects</router-link></span>
+              <span class="nav-button"><router-link to="/life">Life</router-link></span>
+              <!-- <span class="nav-button"><router-link to="/contact">Contact</router-link></span> -->
         </b-row>
       </div>
 </template>
