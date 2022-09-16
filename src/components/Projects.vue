@@ -7,14 +7,14 @@
           <b-row class="mt-5 mb-2">
             <h5>Latest</h5>
           </b-row>
-          <b-row>
-              <b-col><InfoCard 
+          <b-row class="justify-content-center"> 
+              <b-col sm="6"><InfoCard 
                 text="Casa Bar Menu" 
                 link="https://angry-ritchie-9530d3.netlify.app/" 
                 imageUrl="barmneu.png"
                 description="A menu of drinks I like to serve guests at home. Vue.js"
               /></b-col>
-              <b-col><InfoCard
+              <b-col sm="6"><InfoCard
                 text="MeesterKeem Twitch"
                 link="https://twitch.tv/meesterkeem"
                 imageUrl="twitch.png" 

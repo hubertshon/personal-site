@@ -5,10 +5,10 @@
                 <h1 class="display-4">About</h1>
             </b-row>
             <b-row class="justify-content-left align-items-center">
-                <b-col class="d-flex" cols="3">
+                <b-col class="d-flex" md="4">
                     <img src="../assets/images/hs_headshot.jpg" class="headshot" />
                 </b-col>
-                <b-col cols="9" class="d-flex align-content-middle">
+                <b-col cols="8" class="d-flex align-content-middle">
                 <p class="text-left align-self-middle summary">
                     Full-stack engineer with almost 2 years of experience at a financial tech startup. Strong proclivity towards frontend applications and user experience. Highly motivated self-learner who is resolute in seeing tasks to completion. I take delight in empowering users and collaborating with teams that enable their users to do “more”.
                 </p>
