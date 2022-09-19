@@ -1,5 +1,5 @@
 <template>
-    <b-container class="d-flex align-self-top hi5" fluid="md" align-v="start">
+    <b-container class="d-flex align-self-top hi5" fluid="sm" align-v="start">
         <div class="align-self-center about">
             <b-row class="justify-content-left ml-0 mb-3">
                 <h1 class="display-4">About</h1>
