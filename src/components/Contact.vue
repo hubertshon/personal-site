@@ -1,6 +1,6 @@
 <template>
-    <b-container class="d-flex align-self-top justify-content-center" fluid="md" align-v="center">
-        <div class="align-self-center contact">
+    <b-container class="d-flex h-100" fluid="md" align-v="center">
+        <div class="align-self-center w-100">
             <b-row class="justify-content-left header ml-0">
                 <h1 class="display-4">Contact</h1>
             </b-row>
@@ -82,6 +82,7 @@ p {
 
 .contact {
     width: 65%;
+    height: 100%;
 }
 .header {
     margin-bottom: 3rem;

@@ -1,37 +1,32 @@
 <template>
-      <div class="nav-container">
-        <b-row align-h="center">
-          <!-- <b-col>
-            <div 
-              id="leftArrow" 
-              class="d-flex direction-button justify-content-end align-content-center" 
-              @click="flipPage($event)">
-              <font-awesome-icon 
-                id="leftArrow" 
-                icon="fa-solid fa-chevron-left" 
-                class="directions ml-5" 
-              />
-            </div>
-          </b-col> -->
-          <b-col class="d-flex justify-content-center align-content-middle">
-              <span class="nav-button"><router-link to="/">Home</router-link></span>
-              <span class="nav-button"><router-link to="/about">About</router-link></span>
-              <span class="nav-button"><router-link to="/projects">Projects</router-link></span>
-              <span class="nav-button"><router-link to="/contact">Contact</router-link></span>
+  <div class="nav-container">
+    <b-row align-h="center">
+      <!-- <b-col>
+        <div 
+          id="leftArrow" 
+          class="d-flex direction-button justify-content-end align-content-center" 
+          @click="flipPage($event)">
+          <font-awesome-icon 
+            id="leftArrow" 
+            icon="fa-solid fa-chevron-left" 
+            class="directions ml-5" 
+          />
+        </div>
+      </b-col> -->
+      <b-col class="d-flex justify-content-center align-content-middle">
+          <span class="nav-button"><router-link to="/">Home</router-link></span>
+      </b-col>
+      <b-col class="d-flex justify-content-center align-content-middle">
+          <span class="nav-button"><router-link to="/about">About</router-link></span>
+        </b-col>
+        <b-col class="d-flex justify-content-center align-content-middle">
+          <span class="nav-button"><router-link to="/projects">Projects</router-link></span>
+        </b-col>
+        <b-col class="d-flex justify-content-center align-content-middle">
+          <span class="nav-button"><router-link to="/contact">Contact</router-link></span>
           </b-col>
-          <!-- <b-col>
-            <div id="rightArrow" 
-            class="direction-button 
-            justify-content-start" 
-            @click="flipPage($event)">
-              <font-awesome-icon 
-                icon="fa-solid fa-chevron-right"
-                class="directions mr-5" 
-              />
-            </div>
-          </b-col> -->
-        </b-row>
-      </div>
+    </b-row>
+  </div>
 </template>
 
 <script>
@@ -44,43 +39,26 @@ export default {
     // currentPage: '',
     // pageRoutes: ['/', '/about', '/projects', '/contact']
   }),
-  mounted() {
-    // this.currentPage = this.$router.currentRoute.path;
-  },
-  methods: {
-    //   flipPage(event) {
-    //   const clickDirection = event.target.id;
-    //   const currentIndex = this.pageRoutes.findIndex((element) => {
-    //     return element === this.currentPage;
-    //   });
-
-    //   let indexToNavigate;
-    //   if (clickDirection === 'rightArrow') {
-    //     indexToNavigate = currentIndex + 1;
-    //   } else {
-    //     indexToNavigate = currentIndex - 1;
-    //   }
-
-    //   if (indexToNavigate + 1 > this.pageRoutes.length) {
-    //     indexToNavigate = 0;
-    //   }
-
-    //   router.push(this.pageRoutes[indexToNavigate]);
-    //   this.currentPage = this.$router.currentRoute.path;
-    // }
-  }
+  mounted() {},
+  methods: {}
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .nav-container {
-  margin: 0 auto;
-  width: 75%;
+  margin: 0 auto 3rem auto;
+  max-width: 65%;
+  height: 4vh;
 }
 
+
+
 .nav-button {
-  margin: 0 1rem;
+  /* margin-top: 0;
+  margin-bottom: 0; 
+  margin-left: 0.5rem;
+  margin-right: 0.5rem; */
   cursor: pointer;
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -91,6 +69,17 @@ export default {
 .nav-button:hover {
   color: #ffffff;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 414px) {
+  .nav-container {
+    max-width: 90%
+  }
+
+  .nav-button {
+    letter-spacing: 0.25em;
+    font-size: 0.75em;
+  }
 }
 
 a {

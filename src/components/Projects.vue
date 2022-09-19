@@ -1,6 +1,6 @@
 <template>
-    <b-container class="d-flex align-self-top justify-content-center hi5" fluid="md" align-v="center">
-        <div>
+    <b-container class="d-flex justify-content-center" fluid="md" align-v="center">
+        <div class="align-self-center h-100">
           <b-row>
             <h1 class="display-4 mb-4">Projects</h1>
           </b-row>
@@ -103,7 +103,6 @@ p {
 }
 
 .hi5 {
-    /* background-color: black; */
     height: 100%;
 }
 
